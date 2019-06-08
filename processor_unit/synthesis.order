@@ -1,0 +1,7 @@
+i<>.\src\Operational_FSM.cpp
+i<>.\src\Control_FSM.vhd
+i<>.\src\proc_unit.vhd
+i<>.\src\Operational_FSM.vhd
+i<>.\src\DP_TB.vhd
+i<>.\src\CU_TB.vhd
+i<>.\src\ProcUnit_TB.vhd

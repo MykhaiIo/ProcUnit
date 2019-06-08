@@ -1,0 +1,93 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=processor_unit
+
+[Library]
+processor_unit=.\processor_unit\processor_unit.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+DisableIEEEWarnings=0
+DisableVitalMsg=0
+VitalAccel=1
+UnboundError=0
+VitalGlitches=0
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+VerilogLanguage=8
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+AdditionalOptions=
+ErrorOutputLimit=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2008Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+
+[$LibMap$]
+processor_unit=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=dp_tb|testbench_for_dp|1 pu_tb|testbench_for_pu|1   
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/DataPath_FSMD.vhd=-1
+/ControlUnit_FSMD.vhd=-1
+/ProcUnit.vhd=-1
+/DP_TB.vhd=-1
+/CU_TB.vhd=-1
+/ProcUnit_TB.vhd=-1
+
+[Files.Data]
+.\src\DataPath_FSMD.vhd=VHDL Source Code
+.\src\ControlUnit_FSMD.vhd=VHDL Source Code
+.\src\ProcUnit.vhd=VHDL Source Code
+.\src\DP_TB.vhd=VHDL Source Code
+.\src\CU_TB.vhd=VHDL Source Code
+.\src\ProcUnit_TB.vhd=VHDL Source Code
+
+[DefineMacro]
+Global=
+[LocalVerilogDirs]
+Count=0
+[LoadVHPI]
+Count=0

@@ -1,0 +1,39 @@
+Active-HDL 10.5.217.6767 2019-06-07 22:51:42
+
+Elaboration top modules:
+VHDL Configuration            testbench_for_pu
+
+
+------------------------------------------------------------------------------------------------
+Entity   | Architecture | Library        | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------
+PU_TB    | beh          | processor_unit |      | 10.5.217.6767 (Windows) | -dbg
+proc     | top_level    | processor_unit |      | 10.5.217.6767 (Windows) | -dbg
+CU       | beh          | processor_unit |      | 10.5.217.6767 (Windows) | -dbg
+DP       | beh          | processor_unit |      | 10.5.217.6767 (Windows) | -dbg
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+VHDL Configuration      | Library        | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------
+testbench_for_pu        | processor_unit |      |                         | <unavailable>
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+VHDL Package            | Library        | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------
+standard                | std            |      |                         | <unavailable>
+TEXTIO                  | std            |      |                         | <unavailable>
+std_logic_1164          | ieee           |      |                         | <unavailable>
+NUMERIC_STD             | ieee           |      |                         | <unavailable>
+std_logic_arith         | ieee           |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED      | ieee           |      |                         | <unavailable>
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+Library                 | Comment
+------------------------------------------------------------------------------------------------
+ieee                    | Standard IEEE packages library
+processor_unit          | None
+std                     | Standard VHDL library
+------------------------------------------------------------------------------------------------

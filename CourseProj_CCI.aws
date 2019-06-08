@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+processor_unit=.\processor_unit\processor_unit.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+processor_unit=1
