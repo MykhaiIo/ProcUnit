@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.numeric_std.all;
 
 entity proc is 
 	generic (
@@ -11,7 +12,8 @@ entity proc is
 		d1         : in STD_LOGIC_VECTOR(n*2-1 downto 0);
 		d2         : in STD_LOGIC_VECTOR(n-1 downto 0);
 		d3         : in STD_LOGIC;
-		r1, r2     : out STD_LOGIC_VECTOR(n-1 downto 0);
+		r1    	  : out STD_LOGIC_VECTOR(n-1 downto 0);
+		r2	  	  : out STD_LOGIC_VECTOR(n-1 downto 0);
 		IRQ1, IRQ2 : out STD_LOGIC
 		);
 end proc;
@@ -35,7 +37,8 @@ architecture top_level of proc is
 			d3        : in STD_LOGIC;
 			y 	      : in STD_LOGIC_VECTOR(1 to 15);
 			x         : out STD_LOGIC_VECTOR(1 to 5);
-			r1, r2    : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r1    	  : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r2	  	  : out STD_LOGIC_VECTOR(n-1 downto 0);
 			IRQ1, IRQ2: out STD_LOGIC
 			);
 	end component;	

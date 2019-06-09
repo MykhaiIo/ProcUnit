@@ -1,4 +1,4 @@
-89
+166
 ~E 1 "./../src/Control_FSM.vhd" 5 CFSM
 ~A 1 "./../src/Control_FSM.vhd" 17 arch
 ~E 1 "./../src/ControlUnit_FSMD.vhd" 5 CU
@@ -6,20 +6,20 @@
 ~A 1 "./../src/ControlUnit_FSMD.vhd" 13 beh
 ~E 1 "./../src/CU_TB.vhd" 4 CU_TB
 ~A 1 "./../src/CU_TB.vhd" 7 beh
-~E 1 "./../src/DataPath_FSMD.vhd" 6 DP
+~E 1 "./../src/DataPath_FSMD.vhd" 7 DP
 ~A 1 "./../src/DataPath_FSMD.vhd" 23 arch
-~A 1 "./../src/DataPath_FSMD.vhd" 23 beh
-~E 1 "./../src/DP_TB.vhd" 4 DP_TB
-~A 1 "./../src/DP_TB.vhd" 10 beh
+~A 1 "./../src/DataPath_FSMD.vhd" 25 beh
+~E 1 "./../src/DP_TB.vhd" 5 DP_TB
+~A 1 "./../src/DP_TB.vhd" 11 beh
 ~E 1 "./../src/Operational_FSM.vhd" 5 OFSM
-~E 1 "./../src/ProcUnit.vhd" 4 proc
+~E 1 "./../src/ProcUnit.vhd" 5 proc
 ~A 1 "./../src/ProcUnit.vhd" 20 proc
-~A 1 "./../src/ProcUnit.vhd" 20 top_level
-~E 1 "./../src/Testbench.vhd" 3 PU_TB
-~A 1 "./../src/Testbench.vhd" 240 ARCH_PU_TB
-~A 1 "./../src/ProcUnit_TB.vhd" 10 beh
-~A 1 "./../src/Testbench.vhd" 155 CU_PU_TB
-~A 1 "./../src/Testbench.vhd" 9 DP_PU_TB
+~A 1 "./../src/ProcUnit.vhd" 22 top_level
+~E 1 "./../src/ProcUnit_TB.vhd" 5 PU_TB
+~A 1 "./../src/Testbench.vhd" 240 arch_pu_tb
+~A 1 "./../src/ProcUnit_TB.vhd" 11 beh
+~A 1 "./../src/Testbench.vhd" 155 cu_pu_tb
+~A 1 "./../src/Testbench.vhd" 9 dp_pu_tb
 ~C 1 "./../src/CU_TB.vhd" 130 testbench_for_cu
-~C 1 "./../src/DP_TB.vhd" 191 testbench_for_dp
-~C 1 "./../src/ProcUnit_TB.vhd" 78 testbench_for_pu
+~C 1 "./../src/DP_TB.vhd" 194 testbench_for_dp
+~C 1 "./../src/ProcUnit_TB.vhd" 80 testbench_for_pu

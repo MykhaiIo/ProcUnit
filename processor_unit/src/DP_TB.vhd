@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity DP_TB is
 	generic (
@@ -19,7 +20,8 @@ architecture beh of DP_TB is
 			d3        : in STD_LOGIC;
 			y 	      : in STD_LOGIC_VECTOR(1 to 15);
 			x         : out STD_LOGIC_VECTOR(1 to 5);
-			r1, r2    : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r1    	  : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r2	  	  : out STD_LOGIC_VECTOR(n-1 downto 0);
 			IRQ1, IRQ2: out STD_LOGIC
 			);
 	end component;	
@@ -27,8 +29,8 @@ architecture beh of DP_TB is
 	--inputs
 	signal clock : std_logic := '0';
 	signal reset : std_logic := '0';
-	signal data1 : std_logic_vector(n*2-1 downto 0) := (others => 'Z');
-	signal data2 : std_logic_vector(n-1 downto 0) := (others => 'Z');
+	signal data1 : std_logic_vector(n*2-1 downto 0); -- := (others => 'Z');
+	signal data2 : std_logic_vector(n-1 downto 0); -- := (others => 'Z');
 	signal data3 : std_logic := '0';
 	signal controlSig : std_logic_vector(1 to 15);
 	
@@ -185,6 +187,7 @@ begin
 		reset<='0';
 		wait for 10 ns;
 		rest_div;
+		wait;
 	end process;
 end;
 

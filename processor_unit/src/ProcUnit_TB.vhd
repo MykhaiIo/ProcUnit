@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity PU_TB is
 	generic (
@@ -17,7 +18,8 @@ architecture beh of PU_TB is
 			d1         : in STD_LOGIC_VECTOR(n*2-1 downto 0);
 			d2         : in STD_LOGIC_VECTOR(n-1 downto 0);
 			d3         : in STD_LOGIC;
-			r1, r2     : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r1    	  : out STD_LOGIC_VECTOR(n-1 downto 0);
+			r2	  	  : out STD_LOGIC_VECTOR(n-1 downto 0);
 			IRQ1, IRQ2 : out STD_LOGIC
 			);
 	end component;

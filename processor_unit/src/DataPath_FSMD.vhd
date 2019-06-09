@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
-use IEEE.STD_logic_arith.all;
+-- use IEEE.STD_logic_arith.all;
+use IEEE.numeric_std.all;
 
 entity DP is
 	generic (
@@ -15,38 +16,48 @@ entity DP is
 		d3        : in STD_LOGIC;
 		y 	      : in STD_LOGIC_VECTOR(1 to 15);
 		x         : out STD_LOGIC_VECTOR(1 to 5);
-		r1, r2    : out STD_LOGIC_VECTOR(n-1 downto 0);
+		r1    	  : out STD_LOGIC_VECTOR(n-1 downto 0);
+		r2	  	  : out STD_LOGIC_VECTOR(n-1 downto 0);
 		IRQ1, IRQ2: out STD_LOGIC
 		);
 end entity;		   
 
 architecture beh of DP is
-	signal a  : std_logic_vector(n*2 downto 0);
-	signal b  : std_logic_vector(n downto 0);
+	signal a  : signed(n*2 downto 0);
+	signal b  : signed(n downto 0);
 	signal c  : std_logic_vector(n-1 downto 0);
 	signal TgA: std_logic;
 	signal cnt: std_logic_vector(3 downto 0);
 	signal RestoringDivision: std_logic;
+	signal d1_s : signed(n*2 downto 0); 
+	signal d2_s : signed(n downto 0);
+	
 begin
 	process (clk,reset) is
-		variable zeros : std_logic_vector(n*2 downto n+1)	:= (others => '0');
+		variable zeros : std_logic_vector(n*2 downto n+1) := (others => '0');
+		-- variable d1_s : signed(n*2 downto 0) := resize(signed(d1), a'length);
+		-- variable d2_s : signed(n downto 0) := resize(signed(d2), b'length);
+		
 	begin
 		if reset='0' then a<=(others=>'0');
 			b<=(others=>'0');
 			c<=(others=>'0');
 			cnt<="1111";
-		elsif rising_edge(clk) then	
+		elsif rising_edge(clk) then
+			
+			d1_s <= resize(signed(d1), a'length); 
+			d2_s <= resize(signed(d2), b'length);
 			
 			if y(1)='1' then RestoringDivision<=d3;
 			end if;
 			
-			if y(2)='1' then a<='0'&d1;
-			elsif y(4)='1' then a(2*n downto n)<=a(2*n downto n)+not b+(zeros&'1');
-			elsif y(6)='1' then a<=a(2*n-1 downto 0) &'0';
+			if 	  y(2)='1' then a<=d1_s;
+			elsif y(4)='1' then a(2*n downto n)<=a(2*n downto n)+not b+signed(zeros & '1');
+			elsif y(6)='1' then a(2*n downto 0)<=a(2*n-1 downto 0) & '0';
 			elsif y(9)='1' then a(2*n downto n)<=a(2*n downto n)+b;
 			end if;
 			
-			if y(3)='1' then b<='0'&d2;
+			if y(3)='1' then b<=d2_s;
 			end if;
 			
 			if y(7)='1' then c<=(others=>'0');
@@ -63,7 +74,7 @@ begin
 			if y(12)='1' then r1<=c;
 			end if;
 			
-			if y(13)='1' then r2<=a(2*n-1 downto n);
+			if y(13)='1' then r2<=std_logic_vector(a(2*n-1 downto n));
 			end if;
 			
 			if y(14)='1' then IRQ1<='1';

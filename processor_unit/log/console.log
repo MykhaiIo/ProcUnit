@@ -1,5 +1,84 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Error: COMP96_0753: DataPath_FSMD.vhd : (50, 64): Cannot find the "+" operator with operands denoted with the "[UNRESOLVED_SIGNED, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: DataPath_FSMD.vhd : (50, 41): Undefined type of expression. Expected type 'UNRESOLVED_SIGNED'.
+# Error: COMP96_0617: DataPath_FSMD.vhd : (69, 26): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_UNSIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0617: DataPath_FSMD.vhd : (72, 26): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Error: COMP96_0617: DataPath_FSMD.vhd : (69, 26): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_UNSIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0617: DataPath_FSMD.vhd : (72, 26): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Error: COMP96_0015: DataPath_FSMD.vhd : (69, 44): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Error: COMP96_0617: DataPath_FSMD.vhd : (72, 26): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
 asim -O5 +access +r +m+testbench_for_dp testbench_for_dp
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -16,117 +95,118 @@ asim -O5 +access +r +m+testbench_for_dp testbench_for_dp
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6203 kB (elbread=1280 elab2=4779 kernel=143 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  20:51, vendredi 7 juin 2019
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:44, dimanche 9 juin 2019
 #  Simulation has been initialized
-# 17 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
-run
+# 19 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__84.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__79.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__83.
-# RUNTIME: Fatal Error: RUNTIME_0046 DataPath_FSMD.vhd (45): Incompatible ranges; left: (16 downto 8), right: (0 to 9).
-# KERNEL: Time: 225 ns,  Iteration: 1,  Instance: /DP_TB/uut,  Process: line__31.
-# KERNEL: Stopped at time 225 ns + 1.
-# VSIM: Error: Fatal error occurred during simulation.
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6203 kB (elbread=1280 elab2=4779 kernel=143 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  20:52, vendredi 7 juin 2019
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/a' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/b' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/c' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/TgA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/cnt' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/RestoringDivision' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/clk' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/reset' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/d1' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/d2' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/d3' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/y' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/x' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/r1' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/r2' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/IRQ1' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/DP_TB/uut/IRQ2' has already been traced.
-# 0 signal(s) traced.
-run
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__79.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__83.
-# RUNTIME: Fatal Error: RUNTIME_0046 DataPath_FSMD.vhd (45): Incompatible ranges; left: (16 downto 8), right: (0 to 9).
-# KERNEL: Time: 225 ns,  Iteration: 1,  Instance: /DP_TB/uut,  Process: line__31.
-# KERNEL: Stopped at time 225 ns + 1.
-# VSIM: Error: Fatal error occurred during simulation.
-acom -dbg -e 100 -work processor_unit -2002  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\DataPath_FSMD.vhd
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__88.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 175 ns,  Iteration: 2,  Instance: /DP_TB/uut,  Process: line__84.
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
 # Compile Entity "DP"
 # Compile Architecture "beh" of Entity "DP"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ControlUnit_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
 # Compile Entity "CU"
 # Compile Architecture "beh" of Entity "CU"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ProcUnit.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
 # Compile Entity "proc"
 # Compile Architecture "top_level" of Entity "proc"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\DP_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
 # Compile Entity "DP_TB"
 # Compile Architecture "beh" of Entity "DP_TB"
 # Compile Configuration "TESTBENCH_FOR_DP"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\CU_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
 # Compile Entity "CU_TB"
 # Compile Architecture "beh" of Entity "CU_TB"
 # Compile Configuration "TESTBENCH_FOR_CU"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
 # Compile Entity "PU_TB"
 # Compile Architecture "beh" of Entity "PU_TB"
 # Compile Configuration "TESTBENCH_FOR_PU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-acom -dbg -e 100 -work processor_unit -2002  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\DataPath_FSMD.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
 # Compile Entity "DP"
 # Compile Architecture "beh" of Entity "DP"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ControlUnit_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
 # Compile Entity "CU"
 # Compile Architecture "beh" of Entity "CU"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ProcUnit.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
 # Compile Entity "proc"
 # Compile Architecture "top_level" of Entity "proc"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\DP_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
 # Compile Entity "DP_TB"
 # Compile Architecture "beh" of Entity "DP_TB"
 # Compile Configuration "TESTBENCH_FOR_DP"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\CU_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
 # Compile Entity "CU_TB"
 # Compile Architecture "beh" of Entity "CU_TB"
 # Compile Configuration "TESTBENCH_FOR_CU"
-# File: c:\My_Designs\CourseProj_CCI\processor_unit\src\ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
 # Compile Entity "PU_TB"
 # Compile Architecture "beh" of Entity "PU_TB"
 # Compile Configuration "TESTBENCH_FOR_PU"
@@ -149,17 +229,77 @@ restart
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6203 kB (elbread=1280 elab2=4778 kernel=143 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  22:40, vendredi 7 juin 2019
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4800 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:49, dimanche 9 juin 2019
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
-run @10000ns
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run @400ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__84.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__79.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__83.
-# KERNEL: stopped at time: 10 us
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__88.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 175 ns,  Iteration: 2,  Instance: /DP_TB/uut,  Process: line__84.
+# RUNTIME: Fatal Error: RUNTIME_0046 DataPath_FSMD.vhd (51): Incompatible ranges; left: (16 downto 0), right: (15 downto 0).
+# KERNEL: Time: 325 ns,  Iteration: 1,  Instance: /DP_TB/uut,  Process: line__36.
+# KERNEL: Stopped at time 325 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Error: COMP96_0071: DataPath_FSMD.vhd : (51, 63): Operator "sll" is not defined for such operands.
+# Error: COMP96_0077: DataPath_FSMD.vhd : (51, 41): Undefined type of expression. Expected type 'UNRESOLVED_SIGNED'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run @425ns
+run @425ns
 restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -178,11 +318,295 @@ restart
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6203 kB (elbread=1280 elab2=4778 kernel=143 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  22:40, vendredi 7 juin 2019
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4800 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:53, dimanche 9 juin 2019
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:53, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__84.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__88.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 175 ns,  Iteration: 2,  Instance: /DP_TB/uut,  Process: line__84.
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:55, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/d1_s not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/d2_s not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__86.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__90.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 175 ns,  Iteration: 2,  Instance: /DP_TB/uut,  Process: line__86.
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:55, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:56, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__86.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__90.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 175 ns,  Iteration: 2,  Instance: /DP_TB/uut,  Process: line__86.
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
+run @500ns
+# KERNEL: stopped at time: 500 ns
+acom -dbg -e 100 -work processor_unit -2008  $dsn/src/DataPath_FSMD.vhd $dsn/src/ControlUnit_FSMD.vhd $dsn/src/ProcUnit.vhd $dsn/src/DP_TB.vhd $dsn/src/CU_TB.vhd $dsn/src/ProcUnit_TB.vhd
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DataPath_FSMD.vhd
+# Compile Entity "DP"
+# Compile Architecture "beh" of Entity "DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ControlUnit_FSMD.vhd
+# Compile Entity "CU"
+# Compile Architecture "beh" of Entity "CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit.vhd
+# Compile Entity "proc"
+# Compile Architecture "top_level" of Entity "proc"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\DP_TB.vhd
+# Compile Entity "DP_TB"
+# Compile Architecture "beh" of Entity "DP_TB"
+# Compile Configuration "TESTBENCH_FOR_DP"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\CU_TB.vhd
+# Compile Entity "CU_TB"
+# Compile Architecture "beh" of Entity "CU_TB"
+# Compile Configuration "TESTBENCH_FOR_CU"
+# File: c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\ProcUnit_TB.vhd
+# Compile Entity "PU_TB"
+# Compile Architecture "beh" of Entity "PU_TB"
+# Compile Configuration "TESTBENCH_FOR_PU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:59, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__89.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__93.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: stopped at time: 200 ns
+run
+endsim
+# KERNEL: stopped at time: 3527700 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+testbench_for_dp testbench_for_dp
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4801 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  18:59, dimanche 9 juin 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__89.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DP_TB/uut,  Process: line__93.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
+run @500ns
+# KERNEL: stopped at time: 500 ns
+run @600ns
+# KERNEL: stopped at time: 600 ns
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+testbench_for_pu testbench_for_pu
@@ -205,55 +629,15 @@ asim -O5 +access +r +m+testbench_for_pu testbench_for_pu
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7251 kB (elbread=1280 elab2=5826 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  22:40, vendredi 7 juin 2019
+# Allocation: Simulator allocated 7252 kB (elbread=1280 elab2=5827 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit\src\wave.asdb
+#  19:00, dimanche 9 juin 2019
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/a not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/b not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/c not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/TgA not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/cnt not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/RestoringDivision not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/clk not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/reset not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/d1 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/d2 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/d3 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/y not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/x not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/r1 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/r2 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/IRQ1 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /DP_TB/uut/IRQ2 not found in c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb.
-# 12 signal(s) traced.
-run @10000ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /PU_TB/uut/DataPath,  Process: line__79.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /PU_TB/uut/DataPath,  Process: line__83.
-# KERNEL: stopped at time: 10 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7251 kB (elbread=1280 elab2=5826 kernel=144 sdf=0)
-# KERNEL: ASDB file was created in location c:\My_Designs\CourseProj_CCI\processor_unit\src\wave.asdb
-#  22:51, vendredi 7 juin 2019
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'c:/My_Designs/CourseProj_CCI/processor_unit/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/a not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/b not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/c not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/TgA not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/cnt not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/RestoringDivision not found in c:/Users/Michel/Documents/GitHub/ProcUnit/processor_unit/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /DP_TB/uut/clk not found in c:/Users/Michel/Documents/Git

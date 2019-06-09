@@ -46,8 +46,8 @@ ErrorOutputLimit=0
 CompileWithDebug=1
 NetlistCompilation=1
 EnableVHDL93Key=0
-EnableVHDL2002Key=1
-EnableVHDL2008Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
 DisableVHDL87Key=0
 Syntax RelaxLRM=0
 MaxErrorsKey=100
@@ -65,7 +65,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=dp_tb|testbench_for_dp|1 pu_tb|testbench_for_pu|1   
+HierarchyInformation=dp_tb|testbench_for_dp|1 pu_tb|testbench_for_pu|1      
 ShowHide=ShowTopLevel
 Selected=
 
