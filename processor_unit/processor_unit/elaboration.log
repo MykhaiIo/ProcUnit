@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-06-09 19:00:21
+Active-HDL 10.5.217.6767 2019-06-10 19:47:47
 
 Elaboration top modules:
 VHDL Configuration            testbench_for_pu
@@ -37,9 +37,3 @@ ieee                    | Standard IEEE packages library
 processor_unit          | None
 std                     | Standard VHDL library
 ------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+testbench_for_pu testbench_for_pu
-
-
-The performance of simulation is reduced. Version Student Edition

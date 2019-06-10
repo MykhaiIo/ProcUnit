@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
--- use IEEE.STD_logic_arith.all;
 use IEEE.numeric_std.all;
 
 entity DP is
@@ -27,7 +26,7 @@ architecture beh of DP is
 	signal b  : signed(n downto 0);
 	signal c  : std_logic_vector(n-1 downto 0);
 	signal TgA: std_logic;
-	signal cnt: std_logic_vector(3 downto 0);
+	signal cnt: std_logic_vector(4 downto 0);
 	signal RestoringDivision: std_logic;
 	signal d1_s : signed(n*2 downto 0); 
 	signal d2_s : signed(n downto 0);
@@ -35,14 +34,17 @@ architecture beh of DP is
 begin
 	process (clk,reset) is
 		variable zeros : std_logic_vector(n*2 downto n+1) := (others => '0');
-		-- variable d1_s : signed(n*2 downto 0) := resize(signed(d1), a'length);
-		-- variable d2_s : signed(n downto 0) := resize(signed(d2), b'length);
+		-- variable d1_s : signed(n*2 downto 0);
+		-- variable d2_s : signed(n downto 0);
 		
 	begin
 		if reset='0' then a<=(others=>'0');
 			b<=(others=>'0');
 			c<=(others=>'0');
-			cnt<="1111";
+			cnt<="10000";
+			IRQ1<='0';
+			IRQ2<='0';
+			
 		elsif rising_edge(clk) then
 			
 			d1_s <= resize(signed(d1), a'length); 
@@ -64,7 +66,7 @@ begin
 			elsif y(10)='1' then c<=c(n-2 downto 0) & not a(2*n);
 			end if;
 			
-			if y(8)='1' then cnt<="1111";
+			if y(8)='1' then cnt<="10000";
 			elsif y(11)='1' then cnt<=cnt-1;
 			end if;
 			

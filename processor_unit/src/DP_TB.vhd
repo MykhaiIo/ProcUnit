@@ -29,8 +29,8 @@ architecture beh of DP_TB is
 	--inputs
 	signal clock : std_logic := '0';
 	signal reset : std_logic := '0';
-	signal data1 : std_logic_vector(n*2-1 downto 0); -- := (others => 'Z');
-	signal data2 : std_logic_vector(n-1 downto 0); -- := (others => 'Z');
+	signal data1 : std_logic_vector(n*2-1 downto 0) := (others => 'Z');
+	signal data2 : std_logic_vector(n-1 downto 0) := (others => 'Z');
 	signal data3 : std_logic := '0';
 	signal controlSig : std_logic_vector(1 to 15);
 	
@@ -65,19 +65,64 @@ begin
 			wait for 100 ns;
 			--Initialize inputs
 			reset <= '1';
-			data1 <= "1000011100010110";	--"1000011100010110" = 34 582
-			data2 <= "01001110"; -- "01001110" = 78
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
 			data3 <= '0'; 
 			
 			wait for 50 ns;
 			controlSig<=(others => '0');
 			controlSig(1)<='1';
 			controlSig(2)<='1';
-			controlSig(3)<='1';	 -- y1, y2, y3
+			controlSig(3)<='1';	 -- y1, y2, y3 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(14)<='1';
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			reset <= '0';
+			
+			wait for 100 ns;
+			reset <= '1';
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
+			data3 <= '0'; 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(1)<='1';
+			controlSig(2)<='1';
+			controlSig(3)<='1';	 -- y1, y2, y3 
 			
 			wait for 50 ns;
 			controlSig<=(others => '0');
 			controlSig(4)<='1';  -- y4
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(15)<='1';
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			reset <= '0';
+			
+			wait for 100 ns;
+			reset <= '1';
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
+			data3 <= '0'; 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(1)<='1';
+			controlSig(2)<='1';
+			controlSig(3)<='1';	 -- y1, y2, y3 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(4)<='1';  -- y4
+			
 			
 			wait for 50 ns;
 			controlSig<=(others => '0');
@@ -126,17 +171,62 @@ begin
 		procedure rest_div is
 		begin  
 			
+			wait for 100 ns;
 			--Initialize inputs
 			reset <= '1';
-			data1 <= "1000011100010110";	--"1000011100010110" = 34 582
-			data2 <= "01001110"; -- "01001110" = 78
-			data3 <= '1'; 
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
+			data3 <= '0'; 
 			
 			wait for 50 ns;
 			controlSig<=(others => '0');
 			controlSig(1)<='1';
 			controlSig(2)<='1';
-			controlSig(3)<='1';	 -- y1, y2, y3
+			controlSig(3)<='1';	 -- y1, y2, y3 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(14)<='1';
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			reset <= '0';
+			
+			wait for 100 ns;
+			reset <= '1';
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
+			data3 <= '0'; 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(1)<='1';
+			controlSig(2)<='1';
+			controlSig(3)<='1';	 -- y1, y2, y3 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(4)<='1';  -- y4
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(15)<='1';
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			reset <= '0';
+			
+			wait for 100 ns;
+			reset <= '1';
+			data1 <= "0000000000001100";	-- "1000011100010110" = 34 582
+			data2 <= "00000110"; -- "01001110" = 78
+			data3 <= '0'; 
+			
+			wait for 50 ns;
+			controlSig<=(others => '0');
+			controlSig(1)<='1';
+			controlSig(2)<='1';
+			controlSig(3)<='1';	 -- y1, y2, y3 
 			
 			wait for 50 ns;
 			controlSig<=(others => '0');
