@@ -10,6 +10,4 @@ C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/arith_b.vhd=S
 C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_p.vhd=S
 C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_b.vhd=S
 c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit/src/DataPath_FSMD.vhd=S
-c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit/src/ControlUnit_FSMD.vhd=S
-c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit/src/ProcUnit.vhd=S
-c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit/src/ProcUnit_TB.vhd=S
+c:\Users\Michel\Documents\GitHub\ProcUnit\processor_unit/src/DP_TB.vhd=S
