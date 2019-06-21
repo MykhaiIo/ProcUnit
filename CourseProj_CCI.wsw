@@ -1,12 +1,6 @@
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/ControlUnit_FSMD.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/ProcUnit.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/DataPath_FSMD.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/DP_TB.vhd|]
-TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/CU_TB.vhd|]
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/ProcUnit_TB.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\processor_unit\src/ProcUnit.vhd|]
 TemplateId=0

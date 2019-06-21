@@ -1,6 +1,0 @@
-.\src\DataPath_FSMD.vhd
-.\src\ControlUnit_FSMD.vhd
-.\src\ProcUnit.vhd
-.\src\DP_TB.vhd
-.\src\CU_TB.vhd
-.\src\ProcUnit_TB.vhd

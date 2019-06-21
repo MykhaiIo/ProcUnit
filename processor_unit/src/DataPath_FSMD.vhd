@@ -34,8 +34,6 @@ architecture beh of DP is
 begin
 	process (clk,reset) is
 		variable zeros : std_logic_vector(n*2 downto n+1) := (others => '0');
-		-- variable d1_s : signed(n*2 downto 0);
-		-- variable d2_s : signed(n downto 0);
 		
 	begin
 		if reset='0' then a<=(others=>'0');
@@ -73,7 +71,7 @@ begin
 			if y(5)='1' then TgA<=a(2*n);
 			end if; 
 			
-			if y(12)='1' then r1<=c;
+			if y(12)='1' then r1<=c(n-1 downto 0);
 			end if;
 			
 			if y(13)='1' then r2<=std_logic_vector(a(2*n-1 downto n));

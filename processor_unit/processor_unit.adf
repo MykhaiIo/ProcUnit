@@ -65,7 +65,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=cu_tb|testbench_for_cu|1 dp_tb|testbench_for_dp|1 pu_tb|testbench_for_pu|1       
+HierarchyInformation=cu_tb|testbench_for_cu|1 dp_tb|testbench_for_dp|1            
 ShowHide=ShowTopLevel
 Selected=
 
